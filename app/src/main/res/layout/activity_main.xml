@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/wall23"
+    tools:context="app.msdeep14.tripcount.MainActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/about"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@android:drawable/ic_menu_help"
+        app:elevation="5dp"
+        app:backgroundTint="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="5dp"
+        app:borderWidth="0dp"
+         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btntrip"
+        android:layout_marginBottom="130dp"
+        android:textColor="@drawable/mainbuttontext"
+        android:text="trip expenses"
+        android:textSize="23sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mainbuttonbg"
+        />
+
+    <Button
+        android:id="@+id/btnday"
+        android:layout_above="@+id/btntrip"
+        android:text="day2day expenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/mainbuttontext"
+        android:textSize="23sp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/mainbuttonbg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

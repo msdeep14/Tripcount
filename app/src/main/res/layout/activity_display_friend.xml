@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="app.msdeep14.tripcount.Display_friend"
+    android:background="#FFFFFF">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:hint="Add friend"
+        android:padding="10dip"
+        android:textCursorDrawable="@drawable/cursorcolor"
+        android:id="@+id/addname"
+        android:inputType="textFilter|textMultiLine"
+        android:background="@drawable/editshape"
+        android:maxLength="12"
+        android:digits="-_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+
+    <ImageButton
+        android:id="@+id/myF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_margin="4dp"
+        android:layout_alignParentEnd="true"
+        android:tint="@android:color/holo_blue_light"
+        android:text="Button"/>
+    <ListView
+        android:id="@+id/list_friend"
+        android:layout_below="@+id/addname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</RelativeLayout>

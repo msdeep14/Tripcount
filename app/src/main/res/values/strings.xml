@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Tripcount</string>
+    <string name="business_prompt">Choose a Bussiness Type</string>
+</resources>

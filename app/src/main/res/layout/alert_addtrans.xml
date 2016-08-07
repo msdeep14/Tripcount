@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/status_group"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdescription"
+            android:maxLength="12"
+            android:textCursorDrawable="@drawable/cursorcolor"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:hint="description"
+            android:inputType="textFilter|textMultiLine"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            />
+        <RadioButton
+            android:id="@+id/given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnRadioButtonClicked"
+            android:text="given" />
+
+        <RadioButton
+            android:id="@+id/taken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnRadioButtonClicked"
+            android:text="taken" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter amount"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/cursorcolor"
+            android:id="@+id/ramount"
+            android:maxLength="8"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:digits="0123456789"
+            />
+
+    </RadioGroup>
+
+</RelativeLayout>

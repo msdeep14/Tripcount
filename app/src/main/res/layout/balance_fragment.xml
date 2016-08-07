@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/list_above"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    </ListView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_below="@+id/list_above"></View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/list_above"
+        android:id="@+id/txtbal"
+        android:text="\t\t\t\t\t\t\t\tHOW TO BALANCE ? "
+        android:background="#e7e7e7"
+        android:textColor="#FF00"
+        android:textSize="22dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_below="@+id/txtbal"></View>
+    <ListView
+        android:id="@+id/list_below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtbal">
+    </ListView>
+</RelativeLayout>
